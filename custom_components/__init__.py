@@ -177,7 +177,7 @@ class MinRenovasjon:
 
     def get_calender_for_fraction(self, fraksjon_id):
         for entry in self._kalender_list:
-            entry_fraksjon_id, _, _, _, _= entry
+            entry_fraksjon_id, _, _, _, _ = entry
             if fraksjon_id == entry_fraksjon_id:
                 return entry
 

@@ -1,0 +1,8 @@
+{
+  "domain": "min_renovasjon",
+  "name": "Min renovasjon",
+  "documentation": "https://github.com/Danielhiversen/home_assistant_min_renovasjon",
+  "codeowners": ["@danielhiversen"],
+  "requirements": [],
+  "version": "0.0.1"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Min renovasjon",
+    "domains": [
+        "sensor"
+    ],
+    "iot_class": "Cloud Polling"
+}

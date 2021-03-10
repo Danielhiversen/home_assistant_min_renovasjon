@@ -1,4 +1,4 @@
-Integration for Petcare
+Integration for Min renovasjon
 
 [Buy me a coffee :)](http://paypal.me/dahoiv)
 

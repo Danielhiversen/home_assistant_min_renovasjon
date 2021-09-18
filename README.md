@@ -1,7 +1,7 @@
 # Min renovasjon
 
 
-Modified component for using Min renovasjon in Home Assistant.
+Component for using Min renovasjon in Home Assistant.
 Based on (https://github.com/eyesoft/home-assistant-custom-components/tree/master/min_renovasjon)
 
 ## Install

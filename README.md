@@ -54,6 +54,7 @@ One or more fractions for which a sensor is to be set up. ID's might be differen
 4: Glass/Metallemballasje
 5: Drikkekartonger
 6: Spesialavfall
+7: Plastemballasje
 8: Trevirke
 9: Tekstiler
 10: Hageavfall

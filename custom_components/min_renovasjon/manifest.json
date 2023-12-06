@@ -5,5 +5,5 @@
   "codeowners": ["@danielhiversen"],
   "requirements": [],
   "iot_class": "cloud_polling",
-  "version": "0.0.1"
+  "version": "0.1.0"
 }

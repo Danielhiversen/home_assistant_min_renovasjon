@@ -22,11 +22,13 @@ DEFAULT_DATE_FORMAT = "%d/%m/%Y"
 CONST_KOMMUNE_NUMMER = "Kommunenr"
 CONST_APP_KEY = "RenovasjonAppKey"
 CONST_URL_FRAKSJONER = (
-    "https://komteksky.norkart.no/komtek.renovasjonwebapi/api/fraksjoner"
+    "https://norkartrenovasjon.azurewebsites.net/proxyserver.ashx?server="
+    "https://komteksky.norkart.no/MinRenovasjon.Api/api/fraksjoner/"
 )
 CONST_URL_TOMMEKALENDER = (
-    "https://komteksky.norkart.no/komtek.renovasjonwebapi/api/tommekalender?"
-    "gatenavn=[gatenavn]&gatekode=[gatekode]&husnr=[husnr]"
+    "https://norkartrenovasjon.azurewebsites.net/proxyserver.ashx?server="
+    "https://komteksky.norkart.no/MinRenovasjon.Api/api/tommekalender?"
+    "kommunenr=[kommunenr]&gatenavn=[gatenavn]&gatekode=[gatekode]&husnr=[husnr]"
 )
 CONST_APP_KEY_VALUE = "AE13DEEC-804F-4615-A74E-B4FAC11F0A30"
 
@@ -93,6 +95,7 @@ class MinRenovasjon:
         url = url.replace("[gatenavn]", self.gatenavn)
         url = url.replace("[gatekode]", self.gatekode)
         url = url.replace("[husnr]", self.husnr)
+        url = url.replace("[kommunenr]", self._kommunenr)
 
         response = requests.get(url, headers=header)
         if response.status_code == requests.codes.ok:

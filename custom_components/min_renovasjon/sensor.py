@@ -34,7 +34,12 @@ class MinRenovasjonSensor(Entity):
         """Initialize with API object, device id."""
         self._min_renovasjon = min_renovasjon
         self._fraction_id = fraction_id
-
+        
+    @property
+    def unique_id(self):
+        """Return a unique ID to use for this entity."""
+        return self._min_renovasjon.get_calender_for_fraction(self._fraction_id)
+    
     @property
     def name(self):
         """Return the name of the fraction if any."""

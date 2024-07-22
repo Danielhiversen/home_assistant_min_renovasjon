@@ -38,7 +38,8 @@ class MinRenovasjonSensor(Entity):
     @property
     def unique_id(self):
         """Return a unique ID to use for this entity."""
-        return self._min_renovasjon.get_calender_for_fraction(self._fraction_id)
+        fraction = self._min_renovasjon.get_calender_for_fraction(self._fraction_id)
+        return f"{fraction[0]}-{fraction[1]}" if fraction is not None else ""
     
     @property
     def name(self):
